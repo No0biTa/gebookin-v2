@@ -4,7 +4,7 @@ import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const FeaturedProperties = () => {
-  const { data, loading, error } = useFetch("/hotels?featured=true");
+  const { data, loading, error } = useFetch("https://gebookin-api.onrender.com/api/v1/hotels?featured=true");
 
   return (
       <div className="fp">
