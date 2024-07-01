@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 
-const useFetch = ("https://gebookin-api.onrender.com/api/v1") =>{
+const useFetch = (url) =>{
     const [data,setData] = useState([])
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState(false)
@@ -11,7 +11,7 @@ const useFetch = ("https://gebookin-api.onrender.com/api/v1") =>{
             setLoading(true)
             try{
 
-                const res = await axios.get("https://gebookin-api.onrender.com/api/v1");
+                const res = await axios.get(url);
                 setData(res.data);
             }catch (err) {
                 setError(err);
@@ -25,7 +25,7 @@ const useFetch = ("https://gebookin-api.onrender.com/api/v1") =>{
         setLoading(true)
         try{
 
-            const res = await axios.get("https://gebookin-api.onrender.com/api/v1");
+            const res = await axios.get(url);
             setData(res.data);
         }catch (err) {
             setError(err);
