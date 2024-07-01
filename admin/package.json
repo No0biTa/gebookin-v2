@@ -46,5 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8800/api/v1"
+  "proxy": "https://gebookin-api.vercel.app/api/v1"
 }
