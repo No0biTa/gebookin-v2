@@ -22,5 +22,5 @@
     "react-loading-skeleton": "^3.4.0",
     "react-toastify": "^10.0.5"
   },
-  "proxy": "https://gebookin-api.vercel.app/api/v1"
+  "proxy": "https://gebookin-api.onrender.com/api/v1"
 }
