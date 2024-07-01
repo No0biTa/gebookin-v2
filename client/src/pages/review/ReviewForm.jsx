@@ -31,7 +31,7 @@ const ReviewForm = ({ onNewReview }) => {
         dispatch({ type: "REVIEW_START" });
 
         try {
-            const url = "/reviews";
+            const url = "https://gebookin-api.onrender.com/api/v1/reviews";
             const reviewData = { ...credentials }; // Ensure rating is a number
             console.log(`Posting to URL: ${url}`); // Log URL for debugging
             console.log('Review data:', reviewData); // Log data being sent
