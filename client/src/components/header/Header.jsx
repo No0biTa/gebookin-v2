@@ -68,11 +68,10 @@ const Header = ({ type }) => {
           {type !== "list" && (
               <>
                 <h1 className="headerTitle">
-                  A lifetime of discounts? It's Genius.
+                  Cari tempat nyaman ketika badan lelah ? enaknya di GeBookIn aja.
                 </h1>
                 <p className="headerDesc">
-                  Get rewarded for your travels – unlock instant savings of 10% or
-                  more with a free Lamabooking account
+                  Dapatkan benefit dalam setiap travel anda, dan dapatkan instant diskon yang menarik dengan mendaftar di GeBookIn.
                 </p>
                 {/*{!user && <button className="headerBtn">Sign in / Register</button>}*/}
                 <div className="headerSearch">
