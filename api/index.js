@@ -25,6 +25,11 @@ mongoose.connection.on("disconnected", ()=>{
 })
 
 // Middleware
+app.use(cors({
+    origin: 'https://gebookin.onrender.com', // Allow requests from your frontend domain
+    credentials: true, // Allow cookies to be sent with requests
+}));
+
 app.use(cookieParser())
 app.use(express.json())
 
