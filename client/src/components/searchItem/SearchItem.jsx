@@ -11,17 +11,17 @@ const SearchItem = ({item}) => {
       />
       <div className="siDesc">
         <h1 className="siTitle">{item.name}</h1>
-        <span className="siDistance">{item.distance}km from the center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siDistance">{item.distance}km kira-kira</span>
+        <span className="siTaxiOp">Free air mineral loh</span>
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          Hotel dengan suasana menarik dan berbafai fitur dan furniture terbaik!
         </span>
         <span className="siFeatures">
           {item.desc}
         </span>
-        <span className="siCancelOp">Free cancellation </span>
+        <span className="siCancelOp">Cancel gratis tidak dipungut denda</span>
         <span className="siCancelOpSubtitle">
-          You can cancel later, so lock in this great price today!
+          Kamu bisa cancel kemudian, tapi lebih baik book sekarang dulu gak sih!
         </span>
       </div>
       <div className="siDetails">
@@ -37,9 +37,9 @@ const SearchItem = ({item}) => {
                           minimumFractionDigits: 0,
                       }).format(item.cheapestPrice * 1000)}
             </span>
-          <span className="siTaxOp">Includes taxes and fees</span>
+          <span className="siTaxOp">Sudah termasuk pajak dan fees lainnya ya</span>
           <Link to={`https://gebookin-api.onrender.com/api/v1/hotels/${item._id}`}>
-          <button className="siCheckButton">See availability</button>
+          <button className="siCheckButton">Lihat ketersediaannya</button>
           </Link>
         </div>
       </div>
