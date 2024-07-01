@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
-import { useNavigate } from "react-router-dom";
 import "./review.css";
 import logo from "../../assets/Logo GeBookIn .png";
 
@@ -15,7 +14,6 @@ const ReviewForm = ({ onNewReview }) => {
         rating: 1, // Default rating
     });
     const { dispatch } = useContext(AuthContext);
-    const navigate = useNavigate();
     const [message, setMessage] = useState(""); // State for feedback message
 
     const handleChange = (e) => {
@@ -42,7 +40,6 @@ const ReviewForm = ({ onNewReview }) => {
             setMessage("Review submitted successfully!");
             setTimeout(() => {
                 setMessage("");
-                navigate("/");
             }, 3000);
         } catch (err) {
             console.error("Error submitting review:", err); // Debugging log
