@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 
 const Featured = () => {
 
-    const {data,loading,error} = useFetch("/hotels/countByCity?cities=Jakarta,Bandung,Bogor,Depok,Bekasi");
+    const {data,loading,error} = useFetch("https://gebookin-api.onrender.com/api/v1/hotels/countByCity?cities=Jakarta,Bandung,Bogor,Depok,Bekasi");
 
   return (
     <div className="featured">
