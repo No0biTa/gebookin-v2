@@ -38,7 +38,7 @@ const SearchItem = ({item}) => {
                       }).format(item.cheapestPrice * 1000)}
             </span>
           <span className="siTaxOp">Includes taxes and fees</span>
-          <Link to={`/hotels/${item._id}`}>
+          <Link to={`https://gebookin-api.onrender.com/api/v1/hotels/${item._id}`}>
           <button className="siCheckButton">See availability</button>
           </Link>
         </div>
