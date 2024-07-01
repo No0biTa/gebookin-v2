@@ -221,13 +221,55 @@
         align-items: flex-start;
     }
 
+    .averageRatingContainer {
+        width: 50%;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .star {
+        font-size: 32px;
+        margin: 0 2px;
+    }
+}
+
 @media (max-width: 767px) {
     .reviewContent {
         gap: 10px;
     }
 
+    .averageRatingContainer {
+        width: 100%;
+    }
+
+    .stars {
+        font-size: 20px;
+    }
+
+    .star {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 480px) {
     .reviewContent {
         gap: 5px;
     }
+
+    .averageRatingContainer {
+        font-size: 16px;
+    }
+
+    .stars {
+        font-size: 16px;
+    }
+
+    .star {
+        font-size: 20px;
+    }
+}
 
