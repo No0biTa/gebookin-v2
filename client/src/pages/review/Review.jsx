@@ -14,7 +14,7 @@ const Review = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const res = await axios.get("https://gebookin-admin.vercel.app/reviews");
+                const res = await axios.get("/reviews");
                 setReviews(res.data);
             } catch (err) {
                 console.error("Error fetching reviews:", err);

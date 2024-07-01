@@ -31,7 +31,7 @@ const ReviewForm = ({ onNewReview }) => {
         dispatch({ type: "REVIEW_START" });
 
         try {
-            const url = "https://gebookin-admin.vercel.app/reviews";
+            const url = "/reviews";
             const reviewData = { ...credentials }; // Ensure rating is a number
             console.log(`Posting to URL: ${url}`); // Log URL for debugging
             console.log('Review data:', reviewData); // Log data being sent
