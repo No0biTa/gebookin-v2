@@ -44,7 +44,7 @@ const Register = () => {
             );
 
             const { url } = uploadRes.data;
-            const res = await axios.post("/auth/register", {
+            const res = await axios.post("https://gebookin-api.onrender.com/api/v1/auth/register", {
                 ...credentials,
                 profilePicture: url,
             });
