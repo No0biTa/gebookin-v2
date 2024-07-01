@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 
 const PropertyList = () => {
 
-    const {data,loading,error} = useFetch("/hotels/countByType");
+    const {data,loading,error} = useFetch("https://gebookin-api.onrender.com/api/v1/hotels/countByType");
 
     const images = [
         "https://cdn0-production-images-kly.akamaized.net/oSgflu88GES_yPHxHhW2S6owtCE=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3386715/original/094552600_1614241094-Double_Tree_Jakarta.jpg",
