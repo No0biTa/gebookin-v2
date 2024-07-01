@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Reserve = ({ setOpen, hotelId }) => {
     const [selectedRooms, setSelectedRooms] = useState([]);
-    const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`);
+    const { data, loading, error } = useFetch(`https://gebookin-api.onrender.com/api/v1/hotels/room/${hotelId}`);
     const { dates } = useContext(SearchContext);
     const navigate = useNavigate();
 
@@ -53,7 +53,7 @@ const Reserve = ({ setOpen, hotelId }) => {
         try {
             await Promise.all(
                 selectedRooms.map(async (roomId) => {
-                    const res = await axios.put(`/rooms/availability/${roomId}`, {
+                    const res = await axios.put(`https://gebookin-api.onrender.com/api/v1/rooms/availability/${roomId}`, {
                         dates: allDates,
                     });
                     return res.data;
