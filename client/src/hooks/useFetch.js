@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 
-const useFetch = (https://gebookin.onrender.com/hotels/countByCity?cities=Jakarta,Bandung,Bogor,Depok,Bekasi) =>{
+const useFetch = (url) =>{
     const [data,setData] = useState([])
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState(false)
@@ -11,7 +11,7 @@ const useFetch = (https://gebookin.onrender.com/hotels/countByCity?cities=Jakart
             setLoading(true)
             try{
 
-                const res = await axios.get(https://gebookin.onrender.com/hotels/countByCity?cities=Jakarta,Bandung,Bogor,Depok,Bekasi);
+                const res = await axios.get(url);
                 setData(res.data);
             }catch (err) {
                 setError(err);
@@ -25,7 +25,7 @@ const useFetch = (https://gebookin.onrender.com/hotels/countByCity?cities=Jakart
         setLoading(true)
         try{
 
-            const res = await axios.get(https://gebookin.onrender.com/hotels/countByCity?cities=Jakarta,Bandung,Bogor,Depok,Bekasi);
+            const res = await axios.get(url);
             setData(res.data);
         }catch (err) {
             setError(err);
