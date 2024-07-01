@@ -28,11 +28,11 @@ mongoose.connection.on("disconnected", ()=>{
 app.use(cookieParser())
 app.use(express.json())
 
-app.use("/api/v1/auth",authRoute);
-app.use("/api/v1/hotels",hotelsRoute);
-app.use("/api/v1/rooms",roomsRoute);
-app.use("/api/v1/users",userRoute);
-app.use("/api/v1/reviews", reviewRoutes);
+app.use("https://gebookin-admin.vercel.app/api/v1/auth",authRoute);
+app.use("https://gebookin-admin.vercel.app/api/v1/hotels",hotelsRoute);
+app.use("https://gebookin-admin.vercel.app/api/v1/rooms",roomsRoute);
+app.use("https://gebookin-admin.vercel.app/api/v1/users",userRoute);
+app.use("https://gebookin-admin.vercel.app/api/v1/reviews", reviewRoutes);
 
 app.use((err,req,res,next)=>{
     const errorStatus = err.status || 500

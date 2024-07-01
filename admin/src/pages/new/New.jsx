@@ -33,8 +33,8 @@ const New = ({ inputs, title }) => {
         img: url,
       };
 
-      await axios.post("/auth/register", newUser);
-      navigate("/users");
+      await axios.post("https://gebookin-admin.vercel.app/auth/register", newUser);
+      navigate("https://gebookin-admin.vercel.app/users");
     } catch (err) {
       console.log(err);
     }

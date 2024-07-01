@@ -49,8 +49,8 @@ const NewHotel = () => {
         photos: list,
       };
 
-      await axios.post("/hotels", newhotel);
-      navigate("/hotels");
+      await axios.post("https://gebookin-admin.vercel.app/hotels", newhotel);
+      navigate("https://gebookin-admin.vercel.app/hotels");
     } catch (err) {
       console.log(err);
     }
