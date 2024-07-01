@@ -28,7 +28,7 @@ const Hotel = () => {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  const { data, loading, error } = useFetch(`/hotels/find/${id}`);
+  const { data, loading, error } = useFetch(`https://gebookin-api.onrender.com/api/v1/hotels/find/${id}`);
   const { dates = [], options = { room: 1 } } = useContext(SearchContext);
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
