@@ -14,7 +14,7 @@ const Review = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const res = await axios.get("/reviews");
+                const res = await axios.get("https://gebookin-api.onrender.com/api/v1/reviews");
                 setReviews(res.data);
             } catch (err) {
                 console.error("Error fetching reviews:", err);
