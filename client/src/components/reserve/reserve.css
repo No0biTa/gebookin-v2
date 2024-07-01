@@ -1,0 +1,148 @@
+.reserve {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.rContainer {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff6b6b;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.rClose:hover {
+    color: #ff1e1e;
+    transform: scale(1.2);
+}
+
+.rItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.rItemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rDesc {
+    color: #555;
+}
+
+.rMax {
+    color: #888;
+}
+
+.rPrice {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.rSelectRooms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.room {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px; /* Added padding for space around each room number */
+    border-radius: 8px; /* Rounded corners for each room number container */
+    background-color: #f9f9f9; /* Background color for better differentiation */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.room:hover {
+    background-color: #f0f0f0; /* Darker background on hover */
+}
+
+.room label {
+    font-size: 16px;
+    color: #333; /* Adjust label color */
+    margin-left: 10px; /* Added left margin for separation from checkbox */
+}
+
+.room input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%; /* Make it a perfect circle */
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.room input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+.room input[type="checkbox"]:checked::after {
+    content: "\2713"; /* Unicode character for a checkmark */
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.room input[type="checkbox"]:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+    opacity: 0.5; /* Add a slight transparency to indicate it's disabled */
+}
+
+.rButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.rButton:hover {
+    background-color: #0056b3;
+}
