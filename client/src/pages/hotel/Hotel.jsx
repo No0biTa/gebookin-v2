@@ -191,7 +191,7 @@ const Hotel = () => {
                         style: 'currency',
                         currency: 'IDR',
                         minimumFractionDigits: 0,
-                      }).format(totalPrice * 1000)}</b> ({days} nights)
+                      }).format(totalPrice)}</b> ({days} nights)
                     </h2>
                     <button onClick={handleClick}>Reserve or Book Now!</button>
                   </div>
