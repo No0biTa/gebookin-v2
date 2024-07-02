@@ -158,7 +158,7 @@ const Hotel = () => {
                                   style: 'currency',
                                   currency: 'IDR',
                                   minimumFractionDigits: 0,
-                                }).format(data.cheapestPrice * 1000)} at this property and get a free airport taxi
+                                }).format(data.cheapestPrice)} at this property and get a free airport taxi
                 </span>
 
                 <div className="hotelImages">
