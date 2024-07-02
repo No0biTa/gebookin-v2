@@ -35,7 +35,7 @@ const SearchItem = ({item}) => {
                           style: 'currency',
                           currency: 'IDR',
                           minimumFractionDigits: 0,
-                      }).format(item.cheapestPrice * 1000)}
+                      }).format(item.cheapestPrice)}
             </span>
           <span className="siTaxOp">Sudah termasuk pajak dan fees lainnya ya</span>
           <Link to={`/hotels/${item._id}`}>
