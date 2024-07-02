@@ -18,7 +18,7 @@ const List = () => {
   const [max, setMax] = useState(undefined);
 
   const {data,loading,error,reFetch} = useFetch(
-      `https://gebookin-api.onrender.com/api/v1/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`
+      `https://gebookin-api.onrender.com/api/v1/hotels?city=${destination}&min=${min || 0}&max=${max || 9999999999999}`
   );
 
   const handleClick = ()=>{
