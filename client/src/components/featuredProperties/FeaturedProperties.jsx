@@ -26,7 +26,7 @@ const FeaturedProperties = () => {
                                                   style: 'currency',
                                                   currency: 'IDR',
                                                   minimumFractionDigits: 0,
-                                              }).format(item.cheapestPrice * 1000)}
+                                              }).format(item.cheapestPrice)}
                         </span>
                     {item.rating && <div className="fpRating">
                       <button>{item.rating} </button>
