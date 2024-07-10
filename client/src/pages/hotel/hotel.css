@@ -149,3 +149,40 @@
   color: lightgray;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .hotelWrapper {
+    padding: 10px;
+  }
+
+  .hotelDetailsTexts, .hotelDetailsPrice {
+    flex: 1 1 100%;
+  }
+
+  .hotelImgWrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .sliderWrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotelContainer {
+    padding: 10px;
+  }
+
+  .hotelDetails {
+    flex-direction: column;
+  }
+
+  .hotelDetailsPrice h1, .hotelDetailsPrice span, .hotelDetailsPrice h2, .hotelDetailsPrice button {
+    font-size: 14px;
+  }
+
+  .close, .arrow {
+    font-size: 24px;
+  }
+}
