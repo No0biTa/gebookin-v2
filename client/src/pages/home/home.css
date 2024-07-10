@@ -15,26 +15,3 @@
   width: 1024px;
   font-size: 20px;
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .homeContainer {
-    padding: 10px;
-  }
-
-  .homeTitle {
-    font-size: 20px;
-    margin: 15px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .homeContainer {
-    padding: 5px;
-  }
-
-  .homeTitle {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-}
