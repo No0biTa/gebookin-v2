@@ -1,4 +1,4 @@
-.featured{
+/* .featured{
   width: 100%;
   max-width: 1024px;
   display: flex;
@@ -14,7 +14,7 @@
   overflow: hidden;
   height: 250px;
   flex:1
-}
+} */
 
 .featuredImg{
   width: 100%;
@@ -26,4 +26,31 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.featuredItem {
+  flex: 1 1 30%;
+  max-width: 30%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .featuredItem {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .featuredItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
