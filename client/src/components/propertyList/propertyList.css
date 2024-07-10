@@ -29,3 +29,32 @@
   font-size: 14px;
   font-weight: 300;
 }
+
+/* propertyList.css */
+
+.propertyList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.propertyListItem {
+  flex: 1 1 30%;
+  max-width: 30%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .propertyListItem {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .propertyListItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
