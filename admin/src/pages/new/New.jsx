@@ -33,7 +33,7 @@ const New = ({ inputs, title }) => {
         img: url,
       };
 
-      await axios.post("https://gebookin-api.onrender.com/api/v1/auth/register", newUser);
+      await axios.post("https://gebookin-api.vercel.app/api/v1/auth/register", newUser);
       navigate("/users");
     } catch (err) {
       console.log(err);
